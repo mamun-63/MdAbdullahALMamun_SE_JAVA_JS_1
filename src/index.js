@@ -4,8 +4,15 @@ import './bootstrap.min.css'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
+import { StateProvider } from './context-api/StateProvider'
+import reducer, { initialState } from './context-api/reducer'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <StateProvider initialState={initialState} reducer={reducer}>
+    <App />
+  </StateProvider>,
+  document.getElementById('root')
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
