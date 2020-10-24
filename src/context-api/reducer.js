@@ -20,8 +20,31 @@ export const initialState = {
 
 // creating reducer
 const reducer = (state, action) => {
+  console.log(action) // figure out what action reducer is listening
+
   switch (action.type) {
     // listening actions
+
+    case 'REMOVE_FROM_BASKET':
+      console.log('removing id is ', action.id)
+
+      const index = state.basket.findIndex(
+        basketItem => basketItem.id === action.id
+      )
+      let newBasket = [...state.basket]
+
+      if (index >= 0) {
+        newBasket.splice(index, 1)
+      } else {
+        console.warn(
+          `Cant remove product (id: ${action.id}) as its not in basket!`
+        )
+      }
+
+      return {
+        ...state,
+        basket: newBasket,
+      }
 
     default:
       return state

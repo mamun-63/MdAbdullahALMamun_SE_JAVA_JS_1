@@ -18,7 +18,7 @@ const AddProduct = () => {
       alert('Fill Empty Fields')
     } else {
       let newProduct = {
-        id: uuidv4(),
+        id: uuidv4(), // randomly assign a id
         name: name,
         price: price,
         profitPercentage: profitPercentage,
