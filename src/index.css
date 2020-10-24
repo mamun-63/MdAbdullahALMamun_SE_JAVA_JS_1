@@ -12,6 +12,7 @@ form {
   flex-direction: column;
   float: right;
   width: 49%;
+  padding: 10px 5px;
 }
 
 input {

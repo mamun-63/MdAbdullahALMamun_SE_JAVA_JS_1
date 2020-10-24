@@ -7,6 +7,7 @@ import ProductScreen from './screens/ProductScreen'
 import AddProduct from './components/AddProduct'
 import UpdateProduct from './components/UpdateProduct'
 import Stats from './components/Stats'
+import Login from './components/Login'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/stats' component={Stats} />
           <Route path='/add' component={AddProduct} />
           <Route path='/update' component={UpdateProduct} />
+          <Route path='/login' component={Login} />
         </Container>
       </main>
     </Router>
