@@ -6,6 +6,7 @@ import About from './components/About'
 import ProductScreen from './screens/ProductScreen'
 import AddProduct from './components/AddProduct'
 import UpdateProduct from './components/UpdateProduct'
+import Stats from './components/Stats'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Container>
           <Route path='/about' component={About} />
           <Route path='/products' component={ProductScreen} />
+          <Route path='/stats' component={Stats} />
           <Route path='/add' component={AddProduct} />
           <Route path='/update' component={UpdateProduct} />
         </Container>

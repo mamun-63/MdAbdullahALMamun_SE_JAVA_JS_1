@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { useStateValue } from '../context-api/StateProvider'
 
-const Product = ({ product }) => {
+const Product = ({ product, isStats }) => {
   const [{ basket }, dispatch] = useStateValue()
 
   // removing the product from the basket by dispatchig an action to reducer
@@ -21,14 +21,16 @@ const Product = ({ product }) => {
         </Card.Text>
         <Card.Text as='h5'>{product.profitPercentage}% profit</Card.Text>
         <Card.Text as='p'>{product.category}</Card.Text>
-        <Button
-          onClick={removeFromBasket}
-          variant='outline-dark'
-          size='sm'
-          block
-        >
-          Remove
-        </Button>
+        {!isStats && (
+          <Button
+            onClick={removeFromBasket}
+            variant='outline-dark'
+            size='sm'
+            block
+          >
+            Remove
+          </Button>
+        )}
       </Card.Body>
     </Card>
   )

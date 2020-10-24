@@ -1,5 +1,5 @@
 export const initialState = {
-  // initial state of basket
+  // initial state of basket, using some dummy data to show
   basket: [
     {
       id: '1',
@@ -14,6 +14,41 @@ export const initialState = {
       price: 29.99,
       profitPercentage: 98,
       category: 'RAM',
+    },
+    {
+      id: '3',
+      name: 'Gigabyte',
+      price: 89.49,
+      profitPercentage: 180,
+      category: 'Motherboard',
+    },
+    {
+      id: '4',
+      name: 'AMD DDR4',
+      price: 290.0,
+      profitPercentage: 38,
+      category: 'Graphics Card',
+    },
+    {
+      id: '5',
+      name: 'AMD DDR4',
+      price: 50.99,
+      profitPercentage: 70,
+      category: 'Graphics Card',
+    },
+    {
+      id: '6',
+      name: 'AMD DDR4',
+      price: 130.0,
+      profitPercentage: 98,
+      category: 'Motherboard',
+    },
+    {
+      id: '7',
+      name: 'AMD DDR4',
+      price: 399.9,
+      profitPercentage: 120,
+      category: 'Graphics Card',
     },
   ],
 }
