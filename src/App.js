@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import About from './components/About'
 import ProductScreen from './screens/ProductScreen'
+import AddProduct from './components/AddProduct'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Container>
           <Route path='/about' component={About} />
           <Route path='/products' component={ProductScreen} />
+          <Route path='/add' component={AddProduct} />
         </Container>
       </main>
     </Router>
