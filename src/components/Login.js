@@ -21,11 +21,7 @@ const Login = () => {
         <Form.Group controlId='formBasicCheckbox'>
           <Form.Check type='checkbox' label='Remember me' />
         </Form.Group>
-        <Button
-          onClick={e => alert('No Functionality Added')}
-          variant='primary'
-          type='submit'
-        >
+        <Button variant='primary' type='submit' disabled>
           Submit
         </Button>
       </Form>
